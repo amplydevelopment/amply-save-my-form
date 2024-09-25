@@ -7,7 +7,7 @@ Save My Forms helps detect and prevent form submissions by bot users. It utilize
 To integrate **Save My Forms** into your Webflow page, simply add the following script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/amply-save-my-form@cf83030fa05405af5e327aba0f217bccdad904fb/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/amply-save-my-form@57cc8ae0d9c1523db6447ab70e248c8a04fbfbe0/index.js"></script>
 ```
 
 ## API Reference
@@ -22,6 +22,7 @@ Add the `amply-smf-debug="true"` attribute to your form element to enable debug 
 
 - `amply-smf-debug-log`: Contains bot detection data.
 - `amply-smf-is-bot`: Contains a bot detection flag.
+- `amply-smf-debug-fill-seconds`: Contains the total time taken to fill out the form.
 
 ### 3. `amply-smf-action` attribute (optional)
 
@@ -35,9 +36,17 @@ Add the `amply-smf-min-form-change="NUMBER"` attribute to your form element. Thi
 
 Add the `amply-smf-min-key-up="NUMBER"` attribute to your form element. This specifies the minimum number of keyup events that should be triggered while filling out the form.
 
-### 6. `amply-smf-bot-alert` attribute (optional)
+### 6. `amply-smf-min-form-fill-sec` attribute (optional)
+
+Add the `amply-smf-min-form-fill-sec="NUMBER"` attribute to your form element. This specifies the minimum number of seconds required for filling out the form. If a user attempts to submit the form before the specified time has passed, submission will be blocked and the honeypot mechanism will be activated to detect and prevent bot submissions.
+
+### 7. `amply-smf-bot-alert` attribute (optional)
 
 Add the `amply-smf-bot-alert="true"` attribute to any element you want to display when a bot is detected (e.g. a modal or banner). Save My Forms will add an `active` class to this element when bot activity is detected, so make sure to style the `active` class accordingly.
+
+---
+
+This version clarifies the attribute's purpose and behavior for the users of your API.
 
 ---
 
