@@ -38,15 +38,12 @@ Add the `amply-smf-min-key-up="NUMBER"` attribute to your form element. This spe
 
 ### 6. `amply-smf-min-form-fill-sec` attribute (optional)
 
-Add the `amply-smf-min-form-fill-sec="NUMBER"` attribute to your form element. This specifies the minimum number of seconds required for filling out the form. If a user attempts to submit the form before the specified time has passed, submission will be blocked and the honeypot mechanism will be activated to detect and prevent bot submissions.
+Add the `amply-smf-min-form-fill-sec="NUMBER"` attribute to your form element. This specifies the minimum number of seconds required for filling out the form. If a user attempts to submit the form before the specified time has passed, submission will be blocked and the honeypot mechanism will be activated to detect and prevent bot submissions. The default value is 10.
 
 ### 7. `amply-smf-bot-alert` attribute (optional)
 
 Add the `amply-smf-bot-alert="true"` attribute to any element you want to display when a bot is detected (e.g. a modal or banner). Save My Forms will add an `active` class to this element when bot activity is detected, so make sure to style the `active` class accordingly.
 
----
-
-This version clarifies the attribute's purpose and behavior for the users of your API.
 
 ---
 
