@@ -7,7 +7,7 @@ Save My Forms helps detect and prevent form submissions by bot users. It utilize
 To integrate **Save My Forms** into your Webflow page, simply add the following script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/amply-save-my-form@01b161ac7e8842c36a000af40e58b0c2b437351a/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/amply-save-my-form@cf83030fa05405af5e327aba0f217bccdad904fb/index.js"></script>
 ```
 
 ## API Reference
