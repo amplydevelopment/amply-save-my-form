@@ -45,8 +45,6 @@ Add the `amply-smf-min-form-fill-sec="NUMBER"` attribute to your form element. T
 Add the `amply-smf-bot-alert="true"` attribute to any element you want to display when a bot is detected (e.g. a modal or banner). Save My Forms will add an `active` class to this element when bot activity is detected, so make sure to style the `active` class accordingly.
 
 
----
-
 ## Important Notes
 
 - Ensure that your form has a fake action URL to help detect bots.
